@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --light_cyan: hsl(193, 38%, 86%);
+    --neon_green: hsl(150, 100%, 66%);
+    --rayish_blue: hsl(217, 19%, 38%);
+    --dark_grayish_blue: hsl(217, 19%, 24%);
+    --dark_blue: hsl(218, 23%, 16%);
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--dark_blue);
+}
+
+main {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 95%;
+    max-width: 600px;
+    margin: auto;
+    padding: 5vw;
+    border-radius: 10px;
+    background-color: var(--dark_grayish_blue);
+}
+
+main h1 {
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-top: 7%;
+    color: var(--neon_green);
+}
+
+main p {
+    text-align: center;
+    font-size: 24px;
+    margin: 7% 0;
+    color: var(--light_cyan);
+}
+
+main picture {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+main picture img {
+    width: 100%;
+}
+
+.dice-container {
+    position: absolute;
+    display: flex;
+    bottom: -32px;
+    align-self: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: var(--neon_green);
+}
+
+.dice-container:hover {
+    box-shadow: 0 0 30px var(--neon_green);
+}
+
+.dice-container img {
+    height: 25px;
+    margin: auto;
+}
+
+/* Responsive */
+/* Responsive */
+/* Responsive */
+/* Responsive */
+
+@media only screen and (min-width:700px) {
+    main {
+        width: 600px;
+        padding: 30px;
+    }
+}
